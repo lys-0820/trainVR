@@ -9,4 +9,5 @@ EditorBuildSettings:
     Unity.XR.PICO.LivePreview.Settings: {fileID: 11400000, guid: 6919bce22ad6541bba49de040ae2e5db, type: 2}
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: db26691aeefd34a06b6ba995ce521d53, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f7dba976c88be4d7d835fe03131aed38, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6972180c9060736408ce65eac571ea1a, type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: e387ad97f6e1e4d168416e89d01d4750, type: 2}
