@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{6A3FF7FD-7AC5-E7B2-8471-1CE175BE1E4E}|">
+  <MonoDevelop.Ide.ItemProperties.PICO.Platform PreferredExecutionTarget="5c34582f-b5e1-45b0-a25e-b8723223dfe5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../PICO Unity Live Preview Plugin (Experiment) (2)/Runtime/Scripts/PXR_PTPlugin.cs">
+    <Files>
+      <File FileName="../PICO Unity Live Preview Plugin (Experiment) (2)/Runtime/Scripts/PXR_PTPlugin.cs" Line="29" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
