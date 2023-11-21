@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;//别忘了引用
-
+using UnityEngine.UI;
 //卡牌状态，正面、背面
 public enum CardState
 {
@@ -17,7 +17,8 @@ public class controlUI : MonoBehaviour
     public CardState mCardState = CardState.Front;//卡牌当前的状态，是正面还是背面？
     public float mTime = 0.3f;
     private bool isActive = false;//true代表正在执行翻转，不许被打断
-
+    private Color frontColor;
+    private Color backColor;
     /// <summary>
     /// 初始化卡牌角度，根据mCardState
     /// </summary>
@@ -25,19 +26,18 @@ public class controlUI : MonoBehaviour
     {
         if (mCardState == CardState.Front)
         {
-            //如果是从正面开始，则将背面旋转90度，这样就看不见背面了
-            mFront.transform.eulerAngles = Vector3.zero;
-            mBack.transform.eulerAngles = new Vector3(0, 90, 0);
+            //从正面开始
+            setBackInvisible();
         }
         else
         {
-            //从背面开始，同理
-            mFront.transform.eulerAngles = new Vector3(0, 90, 0);
-            mBack.transform.eulerAngles = Vector3.zero;
+            //从背面开始
+            setFrontInvisible();
         }
     }
     private void Start()
     {
+        
         Init();
     }
 
@@ -46,42 +46,27 @@ public class controlUI : MonoBehaviour
     /// </summary>
     public void StartBack()
     {
-        if (isActive)
-            return;
-        StartCoroutine(ToBack());
+
+        setFrontInvisible();
     }
     /// <summary>
     /// 留给外界调用的接口
     /// </summary>
     public void StartFront()
     {
-        if (isActive)
-            return;
-        StartCoroutine(ToFront());
+        setBackInvisible();
     }
-    /// <summary>
-    /// 翻转到背面
-    /// </summary>
-    IEnumerator ToBack()
+
+    private void setFrontInvisible()
     {
-        isActive = true;
-        mFront.transform.DORotate(new Vector3(0, 90, 0), mTime);
-        for (float i = mTime; i >= 0; i -= Time.deltaTime)
-            yield return 0;
-        mBack.transform.DORotate(new Vector3(0, 0, 0), mTime);
-        isActive = false;
+        mFront.gameObject.SetActive(false);
+        mBack.gameObject.SetActive(true);
 
     }
-    /// <summary>
-    /// 翻转到正面
-    /// </summary>
-    IEnumerator ToFront()
+    private void setBackInvisible()
     {
-        isActive = true;
-        mBack.transform.DORotate(new Vector3(0, 90, 0), mTime);
-        for (float i = mTime; i >= 0; i -= Time.deltaTime)
-            yield return 0;
-        mFront.transform.DORotate(new Vector3(0, 0, 0), mTime);
-        isActive = false;
+        mFront.gameObject.SetActive(true);
+        mBack.gameObject.SetActive(false);
+
     }
 }
