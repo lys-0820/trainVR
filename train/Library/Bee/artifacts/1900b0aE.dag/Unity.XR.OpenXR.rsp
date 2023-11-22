@@ -121,6 +121,8 @@
 -define:INPUT_SYSTEM_POSE_VALID
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/DOTween_1_2_745/DOTween/DOTween.dll"
+-r:"Assets/DOTween_1_2_745/DOTween/Editor/DOTweenEditor.dll"
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -327,6 +329,9 @@
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
+-r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
+-r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 -r:"D:/lysTemp/Editor/2021.3.20f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"D:/lysTemp/trainVR/train/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
 -r:"D:/lysTemp/trainVR/train/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
