@@ -46,6 +46,7 @@ public class rollCard : MonoBehaviour
     private void InitCards(LinkedListNode<GameObject> node)
     {
         node.Value.transform.DOScale(new Vector3(1f, 1f, 1f), 1);
+        node.Value.transform.SetAsLastSibling();
         (node.Previous ?? imageList.Last).Value.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
         (node.Next ?? imageList.First).Value.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
     }
@@ -57,6 +58,7 @@ public class rollCard : MonoBehaviour
         (node.Previous ?? imageList.Last).Value.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
         (node.Next ?? imageList.First).Value.transform.DOLocalMoveY(0, 1);
         (node.Next ?? imageList.First).Value.transform.DOScale(new Vector3(1f, 1f, 1f), 1);
+        (node.Next ?? imageList.First).Value.transform.SetAsLastSibling();
     }
     private void SetNextAnim(LinkedListNode<GameObject> node)
     {
@@ -64,7 +66,9 @@ public class rollCard : MonoBehaviour
         node.Value.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
         (node.Previous ?? imageList.Last).Value.transform.DOLocalMoveY(0, 1);
         (node.Previous ?? imageList.Last).Value.transform.DOScale(new Vector3(1f, 1f, 1f), 1);
-        (node.Next ?? imageList.First).Value.transform.DOLocalMoveY(130, 1);
+        (node.Previous ?? imageList.Last).Value.transform.SetAsLastSibling();
+
+       (node.Next ?? imageList.First).Value.transform.DOLocalMoveY(130, 1);
         (node.Next ?? imageList.First).Value.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1);
     }
 }

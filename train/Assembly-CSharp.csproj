@@ -88,6 +88,10 @@
     <Compile Include="Assets\DOTween Examples\Basics.cs" />
     <Compile Include="Assets\DOTween Examples\Materials.cs" />
     <Compile Include="Assets\DOTween Examples\ScrollerAutoJump\AutoJumpPlatform.cs" />
+    <Compile Include="Assets\Scripts\typescript.cs" />
+    <Compile Include="Assets\Scripts\controlUIAppear.cs" />
+    <Compile Include="Assets\Scripts\collisionTest.cs" />
+    <Compile Include="Assets\lookAtCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />

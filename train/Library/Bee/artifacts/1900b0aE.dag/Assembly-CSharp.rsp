@@ -430,6 +430,7 @@
 "Assets/DOTween_1_2_745/DOTween/Modules/DOTweenModuleUI.cs"
 "Assets/DOTween_1_2_745/DOTween/Modules/DOTweenModuleUnityVersion.cs"
 "Assets/DOTween_1_2_745/DOTween/Modules/DOTweenModuleUtils.cs"
+"Assets/lookAtCamera.cs"
 "Assets/Resources/Fillefranz/PropMaker/Scripts/Ladder.cs"
 "Assets/Resources/Fillefranz/PropMaker/Scripts/Prop.cs"
 "Assets/Resources/Fillefranz/Tools/Tools/DataTypes.cs"
@@ -437,10 +438,13 @@
 "Assets/Resources/Fillefranz/Tools/Tools/Helper.cs"
 "Assets/Resources/Fillefranz/Tools/Tools/Parabola.cs"
 "Assets/Resources/ui/TeKniKo_Free/Power_Ups/Scripts/ObjectBounce.cs"
+"Assets/Scripts/collisionTest.cs"
 "Assets/Scripts/controlUI.cs"
+"Assets/Scripts/controlUIAppear.cs"
 "Assets/Scripts/remyAction.cs"
 "Assets/Scripts/rollCard.cs"
 "Assets/Scripts/train.cs"
+"Assets/Scripts/typescript.cs"
 -langversion:9.0
 
 /deterministic
