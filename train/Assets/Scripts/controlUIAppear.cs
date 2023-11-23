@@ -31,7 +31,7 @@ public class controlUIAppear : MonoBehaviour
     {
         selectCards.SetActive(false);
         personDescription.SetActive(true);
-        Tweener tweener = text.DOText("原来你是我最想留住的幸运，原来我们的爱情曾经靠得那么近，那为我对抗世界的决定，那为我淋的雨，一幕幕都是你，一尘不染的真心", 10f).SetLoops(0);
+        Tweener tweener = text.DOText("Jody relies on wheelchair for transportation due to an accident in childhood.\n\nBecause of her disability, Jody has been shy since a very young age.Every time when she encounters difficulties in life, she would rather try handle the problem herself than asking others for help.", 10f).SetLoops(0);
         tweener.OnComplete(setBtVisible);
         
         

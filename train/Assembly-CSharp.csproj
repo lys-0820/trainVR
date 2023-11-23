@@ -59,6 +59,7 @@
     <Compile Include="Assets\DOTween Examples\CustomPlugin Example\CustomPluginExampleBrain.cs" />
     <Compile Include="Assets\Resources\ui\TeKniKo_Free\Power_Ups\Scripts\ObjectBounce.cs" />
     <Compile Include="Assets\Scripts\train.cs" />
+    <Compile Include="Assets\Scripts\typescript.cs" />
     <Compile Include="Assets\DOTween Examples\_Shared Example Assets\DragTarget.cs" />
     <Compile Include="Assets\DOTween_1_2_745\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\controlUI.cs" />
@@ -66,10 +67,12 @@
     <Compile Include="Assets\DOTween Examples\ScrollerAutoJump\AutoJumpScene.cs" />
     <Compile Include="Assets\Resources\Fillefranz\Tools\Tools\ExtensionMethods.cs" />
     <Compile Include="Assets\DOTween Examples\CustomPlugin Example\CustomRangePlugin.cs" />
+    <Compile Include="Assets\Scripts\collisionTest.cs" />
     <Compile Include="Assets\Scripts\remyAction.cs" />
     <Compile Include="Assets\Resources\Fillefranz\Tools\Tools\Parabola.cs" />
     <Compile Include="Assets\DOTween_1_2_745\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\Resources\Fillefranz\Tools\Tools\DataTypes.cs" />
+    <Compile Include="Assets\Scripts\controlUIAppear.cs" />
     <Compile Include="Assets\DOTween_1_2_745\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\DOTween_1_2_745\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\DOTween Examples\Sequences.cs" />
@@ -86,12 +89,10 @@
     <Compile Include="Assets\DOTween Examples\Follow.cs" />
     <Compile Include="Assets\Resources\Fillefranz\PropMaker\Scripts\Ladder.cs" />
     <Compile Include="Assets\DOTween Examples\Basics.cs" />
+    <Compile Include="Assets\Scripts\lookAtCamera.cs" />
     <Compile Include="Assets\DOTween Examples\Materials.cs" />
     <Compile Include="Assets\DOTween Examples\ScrollerAutoJump\AutoJumpPlatform.cs" />
-    <Compile Include="Assets\Scripts\typescript.cs" />
-    <Compile Include="Assets\Scripts\controlUIAppear.cs" />
-    <Compile Include="Assets\Scripts\collisionTest.cs" />
-    <Compile Include="Assets\lookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\controlTrainUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
