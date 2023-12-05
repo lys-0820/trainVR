@@ -22,7 +22,7 @@ public class collisionTest : MonoBehaviour
         if (e.gameObject.tag.CompareTo("NPC") == 0)
         {
             Debug.Log(e.gameObject.name);
-            StartCoroutine(PlayPop(e.gameObject));
+            //StartCoroutine(PlayPop(e.gameObject));
         }
 
 
