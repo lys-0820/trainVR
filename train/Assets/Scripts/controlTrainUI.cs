@@ -12,7 +12,7 @@ public class controlTrainUI : MonoBehaviour
     [SerializeField] List<string> NPCTextList;
     [SerializeField] Button nextBt;
     [SerializeField] GameObject questionObj;
-    [SerializeField] GameObject downNotice;
+    public GameObject downNotice;
     public int currentIndex;
     public XRRayInteractor rayInteractor;
     RaycastHit hit;
@@ -25,7 +25,7 @@ public class controlTrainUI : MonoBehaviour
         textObj.SetActive(false);
         //nextBt.gameObject.SetActive(false);
         rightHand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
-        downNotice.SetActive(true);
+        //downNotice.SetActive(true);
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class controlTrainUI : MonoBehaviour
             
             if (hit.collider.gameObject.tag.CompareTo("dialogue") == 0)
             {
-                Debug.Log(name);
+                //Debug.Log(name);
                 if (rightHand.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton,
      out rightTriggerValue)&&rightTriggerValue)
                 {
@@ -63,13 +63,14 @@ public class controlTrainUI : MonoBehaviour
         if (currentIndex < NPCTextList.Count)
         {
             NPCText.text = "";
+            print(currentIndex);
             Tweener tweener =  NPCText.DOText(NPCTextList[currentIndex], 5f).SetEase(Ease.Linear);
             tweener.OnComplete(setBtVisible);
         }
         else
         {
             CloseDialog();
-            downNotice.SetActive(false);
+            //downNotice.SetActive(false);
         }
     }
     private void setBtVisible()

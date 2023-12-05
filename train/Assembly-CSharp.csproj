@@ -79,6 +79,7 @@
     <Compile Include="Assets\Resources\Fillefranz\PropMaker\Scripts\Prop.cs" />
     <Compile Include="Assets\DOTween_1_2_745\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\DOTween Examples\UGUI.cs" />
+    <Compile Include="Assets\Scripts\controlTrainUI.cs" />
     <Compile Include="Assets\DOTween_1_2_745\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\DOTween Examples\ScrollerAutoJump\AutoJumpActor.cs" />
     <Compile Include="Assets\DOTween Examples\Paths.cs" />
@@ -92,7 +93,6 @@
     <Compile Include="Assets\Scripts\lookAtCamera.cs" />
     <Compile Include="Assets\DOTween Examples\Materials.cs" />
     <Compile Include="Assets\DOTween Examples\ScrollerAutoJump\AutoJumpPlatform.cs" />
-    <Compile Include="Assets\Scripts\controlTrainUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
